@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>transform</title>
+		<link rel="stylesheet" type="text/css" href="style/reset.css">
+		<link rel="stylesheet" type="text/css" href="style/style.css">
+		
+	</head>
+
+	<body>
+
+		<ul>
+			<a href="#part1"  class="js-scrollTo" ><li> À propos </li> </a>
+			<a href="#part2"  class="js-scrollTo" ><li> Photographie </li> </a>
+			<a href="#part3"  class="js-scrollTo" ><li> Typographie </li> </a>
+			<a href="#part4"  class="js-scrollTo" ><li> Édition </li> </a>
+			<a href="#part5"  class="js-scrollTo" ><li> Identité visuelle </li> </a>
+			<a href="#part6"  class="js-scrollTo" ><li> Contact </li> </a>
+
+		</ul>
+
+		<section id="part1">
+			<h1> 
+				<div> 
+				Marie Fourment - 01/10/1999 -
+				Étudiante en deuxième année de DNMADE mention graphisme, parcours objet éditorial - Bac ES mention européenne anglais + MANAA - Stage à librairie 0fr. et à la mairie de Senlis en communication
+				</div>
+			</h1>
+		</section>
+			  
+		<section id="part2">
+			
+			<h2>
+				<img src="image/tarte.jpeg">
+				<img src="image/tomate.jpeg">
+				<img src="image/surfer.jpeg">
+			
+
+				<p>
+				Photographies réalisées au Kodak figeant des moments de vie. Environ 40 photographies, 1 par jour. 
+				</p>
+				
+			</h2>
+			
+		</section>
+
+		<section id="part3">
+			<h3> 
+				<div id="conteneur">
+				<img src="image/mariefourment_specimen.jpeg">
+				</div>
+				
+
+				<p>
+				Typographie "Nineteenco" réalisée sur Fontstruct.
+				</p>
+			</h3>
+		</section>
+
+		<section id="part4">
+			<h4> 
+				<div id="image"> 
+				<img src="image/1.jpeg">
+				<img src="image/2.jpeg">
+				<img src="image/3.jpeg"> 
+				<img src="image/4.jpeg">
+				<img src="image/5.jpeg">
+				<img src="image/6.jpeg">
+				</div>
+
+			<p>
+				Couvertures pour la collection Femmes d'exception des éditions Gallimard et ELLE.
+			</p>
+			</h4>
+		</section>
+
+		<section id="part5">
+			<h5> 
+				<div id="affiche"> 
+				<img src="image/daufunk.jpeg">
+				</div>
+
+			<p>
+				Participation au concours de Paris Dauphine pour la création de l'affiche du festival Daufunk.
+			</p>
+			</h5>
+		</section>
+
+		<section id="part6">
+			<h1> 
+				<div> 
+				Contact :
+				3 rue Dugommier, 75012, Paris - marie-fourment@hotmail.com -
+				marie.fourment - 07 50 98 96 26
+				</div>
+			</h1>
+		</section>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			$('.js-scrollTo').on('click', function() { // Au clic sur un élément
+				var page = $(this).attr('href'); // Page cible
+				var speed = 750; // Durée de l'animation (en ms)
+				('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
+				return false;
+			});
+		});
+	</script>
+
+
+	</body>
+</html>
